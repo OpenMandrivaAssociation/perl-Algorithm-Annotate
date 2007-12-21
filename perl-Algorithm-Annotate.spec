@@ -9,6 +9,7 @@ Group:		Development/Perl
 Summary:	Perl module to represent a series of changes in annotate form
 Source0:        ftp://ftp.perl.org/pub/CPAN/modules/by-module/Algorithm/%{realname}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{realname}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildRequires:  perl(Algorithm::Diff)
 BuildArch:      noarch
