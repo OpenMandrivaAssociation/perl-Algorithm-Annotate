@@ -3,7 +3,7 @@
 
 Name:		perl-%{realname}
 Version:	0.10
-Release: %mkrel 6
+Release: %mkrel 7
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Perl module to represent a series of changes in annotate form
