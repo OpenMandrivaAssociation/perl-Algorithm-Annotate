@@ -2,14 +2,14 @@
 %define upstream_version 0.10
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Perl module to represent a series of changes in annotate form
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Algorithm-Annotate
+Source0:    https://cpan.metacpan.org/authors/id/C/CL/CLKAO/Algorithm-Annotate-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl-devel
