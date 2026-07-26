@@ -1,15 +1,13 @@
 %define upstream_name	 Algorithm-Annotate
-%define upstream_version 0.10
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.10
+Release:	7
 
 Summary:	Perl module to represent a series of changes in annotate form
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Algorithm-Annotate
-Source0:    https://cpan.metacpan.org/authors/id/C/CL/CLKAO/Algorithm-Annotate-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/C/CL/CLKAO/Algorithm-Annotate-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl-devel
@@ -21,7 +19,7 @@ Algorithm::Annotate generates a list that is useful for generating output
 similar to cvs annotate
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -45,9 +43,7 @@ make test
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.100.0-1mdv2011.0
 + Revision: 405953
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.10-9mdv2009.0
+- rebuild using %0.10 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.10-9mdv2009.0
 + Revision: 255260
 - rebuild
 
